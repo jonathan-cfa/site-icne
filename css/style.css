@@ -95,12 +95,6 @@ section a:hover{
     text-decoration: underline;
 }
 
-blockquote{
-    background-image: linear-gradient(to right,var(--cor0),transparent);
-    margin: 0px 170px;
-}
-
-
 footer{
     text-align: center;
     color: rgba(255, 255, 255, 0.603);
@@ -117,4 +111,5 @@ footer a {
 footer a:hover{
     text-decoration: underline;
     font-weight: bolder;
+
 }
