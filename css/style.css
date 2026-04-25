@@ -98,6 +98,12 @@ main img.yt{
     display: block;
 }
 
+section img.livros{
+    max-width: 30vw;
+    margin: auto;
+    display: block;
+}
+
 section a{
     color: var(--cor3);
     font-weight: bolder;
@@ -139,4 +145,20 @@ footer a:hover{
     text-decoration: underline;
     font-weight: bolder;
 
+}
+
+section a.bt{
+    background-color: var(--cor3);
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px black;
+    padding: 8px;
+}
+
+section  a:hover.bt{
+    cursor: pointer;
+    text-decoration: none;
+    background-color: var(--cor4);
 }
