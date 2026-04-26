@@ -22,20 +22,20 @@ html,body{
     
 }
 
+/* ==============================================================CABEÇALHO */
 header{
     color: white;
     background-image: linear-gradient(to bottom,var(--cor3),var(--cor4));
     padding-bottom: 20px;
     text-align: center;
     font-variant: small-caps;
+    box-shadow: -1px 3px 3px 0px #000000b5;
 }
-    
 
+/*====================================================== MENU DE NAVEGAÇÃO */
 nav{
     color: white;
-    background-color: var(--cor4);
     padding-bottom: 15px;
-    box-shadow: -1px 3px 3px 0px #000000b5;
     font-family: sans-serif;
     text-align: center;
 }
@@ -46,14 +46,38 @@ nav a{
     color: white;
 }
 
-nav a:hover{
-    text-decoration: underline;
+nav div ul{
+    display: none;
+    padding: 10px 0px;
+    right: 40px;
+    visibility: none;
+    position: absolute;
+    margin-top: 40px;
+    list-style: none;
+    background-color: var(--cor4);
+    border-radius: 5px;
+}
+nav li{
+    margin: 5px 0px;
 }
 
-nav abbr{
-    text-decoration: none;
+nav li:hover{
+    background-color: var(--cor5);
+
+    
 }
 
+nav img{
+    height: 30px;
+    position: absolute;
+    right: 30px;
+    padding-top: 10px;
+}
+nav div:hover> ul{
+    display: block;
+}
+
+/* ============================================================MAIN  */
 main{
     background-color: white;
     min-width: 270px;
@@ -80,11 +104,6 @@ main p.ajuste{
     padding-bottom: 40px;
 }
 
-section ul{
-    list-style-position: inside;
-    list-style-type: '\1F449\00A0';
-    text-align: center;
-}
 main img.pequena{
     max-width: 60vw;
     margin: auto;
@@ -97,6 +116,14 @@ main img.yt{
     margin: auto;
     display: block;
 }
+
+/* ================================================================SEÇÕES */
+section ul{
+    list-style-position: inside;
+    list-style-type: '\1F449\00A0';
+    text-align: center;
+}
+
 
 section img.livros{
     max-width: 30vw;
@@ -115,9 +142,9 @@ section a:hover{
     color: darkred;
 }
 
-div{
+section div{
     background-color:#bfcebf;
-    margin: 0px 50px;
+    margin: 0px 30px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 1px 2px 4px 2px #00000069;
 }
@@ -125,9 +152,12 @@ div h2{
     background-color: var(--cor4);
     color: white;
     border-radius: 10px 10px 0px 0px;
+
 }
 
 
+
+/*============================================================== RODA PÉ */
 footer{
     text-align: center;
     color: rgba(255, 255, 255, 0.603);
@@ -145,20 +175,4 @@ footer a:hover{
     text-decoration: underline;
     font-weight: bolder;
 
-}
-
-section a.bt{
-    background-color: var(--cor3);
-    color: white;
-    font-weight: bolder;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 1px 1px 1px black;
-    padding: 8px;
-}
-
-section  a:hover.bt{
-    cursor: pointer;
-    text-decoration: none;
-    background-color: var(--cor4);
 }
