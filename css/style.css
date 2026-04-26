@@ -63,18 +63,30 @@ nav li{
 
 nav li:hover{
     background-color: var(--cor5);
+    transition: .5s;
 
     
 }
 
 nav img{
-    height: 30px;
+    height: 25px;
+    top: 6px;
     position: absolute;
     right: 30px;
     padding-top: 10px;
 }
 nav div:hover> ul{
     display: block;
+}
+
+.redes{
+    position: absolute;
+    right: 80px;
+    top: 10px;
+}
+.imgtop{
+    padding: 0px 10px;
+    
 }
 
 /* ============================================================MAIN  */
@@ -155,6 +167,18 @@ div h2{
 
 }
 
+.bt{
+    background-image: linear-gradient(to left,var(--cor3),var(--cor4));
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.616);
+}
+ a:hover.bt{
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(to right,var(--cor3),var(--cor4));
+}
 
 
 /*============================================================== RODA PÉ */
